@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{747E9187-A79F-4DCF-8A9F-D5C96D2A8A89}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Algorithms", "src\Algorithms\Algorithms.fsproj", "{A851C800-1FCE-45EA-A8FB-97FF706496CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A851C800-1FCE-45EA-A8FB-97FF706496CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A851C800-1FCE-45EA-A8FB-97FF706496CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A851C800-1FCE-45EA-A8FB-97FF706496CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A851C800-1FCE-45EA-A8FB-97FF706496CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A851C800-1FCE-45EA-A8FB-97FF706496CF} = {747E9187-A79F-4DCF-8A9F-D5C96D2A8A89}
+	EndGlobalSection
+EndGlobal
