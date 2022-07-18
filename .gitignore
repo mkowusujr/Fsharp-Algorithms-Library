@@ -1,5 +1,6 @@
-src/Algorithms/bin
+src/Algorithms/bin    
 src/Algorithms/obj
-test/Algorithms.Test/bin
-test/Algorithms.Test/obj
-test/Algorithms.Test/TestResults/Ionide.trx
+test/Algorithms.Tests/bin
+test/Algorithms.Tests/obj
+test/Algorithms.Tests/TestResults
+.fake

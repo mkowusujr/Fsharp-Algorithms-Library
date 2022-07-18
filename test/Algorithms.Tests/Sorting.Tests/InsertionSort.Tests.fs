@@ -1,17 +1,8 @@
 module Algorithms.Sorting.InsertionSort.Tests
 
 open Xunit
-open Algorithms.Sorting
-
-let makeRandList count =
-    let rnd = System.Random()
-    List.init count (fun _ -> rnd.Next(1, 100))
-
-[<Fact>]
-let ``can makeRandList`` () =
-    let c = 5
-    let l = makeRandList c
-    Assert.Equal(c, l.Length)
+open Algorithms.Sorting.InsertionSort
+open Algorithms.Sorting.Lists
 
 [<Fact>]
 let ``insertion sort on reversed list`` () =

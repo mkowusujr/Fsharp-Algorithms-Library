@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{747E9187-A79F-4DCF-8A9F-D5C96D2A8A89}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6F5AC8C0-3A4E-459E-8FE1-4D4FAE148CC9}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Algorithms", "src\Algorithms\Algorithms.fsproj", "{A851C800-1FCE-45EA-A8FB-97FF706496CF}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Algorithms", "src\Algorithms\Algorithms.fsproj", "{2A6D3FC8-F291-4225-80C8-96469CBA25BC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{FA802E9C-7607-490E-A0B2-604C3E20A8BF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{F34394A6-08D1-4E2F-9E00-5B46DC459732}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Algorithms.Test", "test\Algorithms.Test\Algorithms.Test.fsproj", "{447CBCEF-34A9-42ED-AA90-42FFF9786CAA}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Algorithms.Tests", "test\Algorithms.Tests\Algorithms.Tests.fsproj", "{CDB8CD4A-5E89-49FC-8F1B-EB20D17EA292}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,17 +20,17 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A851C800-1FCE-45EA-A8FB-97FF706496CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A851C800-1FCE-45EA-A8FB-97FF706496CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A851C800-1FCE-45EA-A8FB-97FF706496CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A851C800-1FCE-45EA-A8FB-97FF706496CF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{447CBCEF-34A9-42ED-AA90-42FFF9786CAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{447CBCEF-34A9-42ED-AA90-42FFF9786CAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{447CBCEF-34A9-42ED-AA90-42FFF9786CAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{447CBCEF-34A9-42ED-AA90-42FFF9786CAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A6D3FC8-F291-4225-80C8-96469CBA25BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A6D3FC8-F291-4225-80C8-96469CBA25BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A6D3FC8-F291-4225-80C8-96469CBA25BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A6D3FC8-F291-4225-80C8-96469CBA25BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDB8CD4A-5E89-49FC-8F1B-EB20D17EA292}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDB8CD4A-5E89-49FC-8F1B-EB20D17EA292}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDB8CD4A-5E89-49FC-8F1B-EB20D17EA292}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDB8CD4A-5E89-49FC-8F1B-EB20D17EA292}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{A851C800-1FCE-45EA-A8FB-97FF706496CF} = {747E9187-A79F-4DCF-8A9F-D5C96D2A8A89}
-		{447CBCEF-34A9-42ED-AA90-42FFF9786CAA} = {FA802E9C-7607-490E-A0B2-604C3E20A8BF}
+		{2A6D3FC8-F291-4225-80C8-96469CBA25BC} = {6F5AC8C0-3A4E-459E-8FE1-4D4FAE148CC9}
+		{CDB8CD4A-5E89-49FC-8F1B-EB20D17EA292} = {F34394A6-08D1-4E2F-9E00-5B46DC459732}
 	EndGlobalSection
 EndGlobal
