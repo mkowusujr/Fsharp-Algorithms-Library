@@ -1,4 +1,4 @@
-module Algorithms.Arithmetic
+module Algorithms.Arithmetic.BasicArithmetic
 
 let add x y = x + y
 
