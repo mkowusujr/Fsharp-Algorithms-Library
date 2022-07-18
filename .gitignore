@@ -1,2 +1,4 @@
 src/Algorithms/bin
 src/Algorithms/obj
+test/Algorithms.Test/bin
+test/Algorithms.Test/obj
