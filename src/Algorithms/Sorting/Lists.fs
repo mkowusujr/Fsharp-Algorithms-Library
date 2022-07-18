@@ -1,5 +1,11 @@
 module Algorithms.Sorting.Lists
 
-let makeRandList count =
+let randList count min max=
     let rnd = System.Random()
-    List.init count (fun _ -> rnd.Next(1, 100))
+    List.init count (fun _ -> rnd.Next(min, max))
+
+let orderedList min max = 
+    [min .. max]
+
+let reverseOrderdList min max =
+    [max .. min]

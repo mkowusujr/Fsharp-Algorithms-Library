@@ -20,7 +20,7 @@ let ``insertion sort on ordered list`` () =
 
 [<Fact>]
 let ``insertion sort on randomized list`` () =
-    let l: list<int> = makeRandList 15
+    let l: list<int> = randList 15 1 100
     let a: list<int> = isort l
-    for i in 1 .. (a.Length - 2 ) do
+    for i in 0 .. (a.Length - 2 ) do
         Assert.True(a[i] <= a[i+1])
