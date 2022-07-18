@@ -6,7 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Arithmetic/BasicArithmetic.fs" />
+    <Compile Include="Arithmetic/BasicArithmetic.fs"/>
+    <Compile Include="Sorting/InsertionSort.fs"/>
   </ItemGroup>
 
 </Project>
