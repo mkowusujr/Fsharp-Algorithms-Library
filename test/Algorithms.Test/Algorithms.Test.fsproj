@@ -8,7 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Arithmetic.Test/BasicArithmetic.Test.fs" />
+    <Compile Include="Arithmetic.Test/BasicArithmetic.Test.fs"/>
+    <Compile Include="Sorting.Test/InsertionSort.Test.fs"/>
   </ItemGroup>
 
   <ItemGroup>
