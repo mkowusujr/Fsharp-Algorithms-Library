@@ -1,6 +1,6 @@
-module Algorithms.Sorting
+module Algorithms.Sorting.InsertionSort
 
-let rec insert (x: 'a) (xs: list<'a>): list<'a> =
+let rec private insert (x: 'a) (xs: list<'a>): list<'a> =
     match (x, xs) with
     | x, [] -> [x]
     | x, y::ys -> 
