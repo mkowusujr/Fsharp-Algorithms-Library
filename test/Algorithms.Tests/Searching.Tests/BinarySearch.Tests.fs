@@ -1,0 +1,1 @@
+module Algorithms.Searching.BinarySearch.Tests
