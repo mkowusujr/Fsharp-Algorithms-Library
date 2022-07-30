@@ -11,6 +11,8 @@
     <Compile Include="Arithmetic.Tests/BasicArithmetic.Tests.fs"/>
     <Compile Include="Arithmetic.Tests/Factorial.Tests.fs"/>
     <Compile Include="Arithmetic.Tests/Sums.Tests.fs"/>
+    <Compile Include="Arithmetic.Tests/Powers.Tests.fs"/>
+    <Compile Include="Searching.Tests/BinarySearch.Tests.fs"/>
     <Compile Include="Sorting.Tests/Lists.Tests.fs"/>
     <Compile Include="Sorting.Tests/InsertionSort.Tests.fs"/>
   </ItemGroup>
