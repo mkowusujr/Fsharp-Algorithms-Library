@@ -1,6 +1,6 @@
 module Algorithms.Sorting.InsertionSort
 
-let rec private insert (x: 'a) (xs: list<'a>): list<'a> =
+let rec private insert x xs =
     match (x, xs) with
     | x, [] -> [x]
     | x, y::ys -> 
@@ -9,7 +9,7 @@ let rec private insert (x: 'a) (xs: list<'a>): list<'a> =
         else
             y :: insert x ys
 
-let rec isort (list: list<'a>): list<'a> = 
+let rec isort list = 
     match list with
     | [] -> []
     | x :: xs -> insert (x) (isort xs)
