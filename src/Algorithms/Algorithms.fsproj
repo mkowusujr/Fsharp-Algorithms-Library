@@ -8,6 +8,7 @@
   <ItemGroup>
     <Compile Include="Arithmetic/BasicArithmetic.fs"/>
     <Compile Include="Arithmetic/Factorial.fs"/>
+    <Compile Include="Arithmetic/Sums.fs"/>
     <Compile Include="Sorting/Lists.fs"/>
     <Compile Include="Sorting/InsertionSort.fs"/>
   </ItemGroup>

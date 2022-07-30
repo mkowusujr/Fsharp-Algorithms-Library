@@ -1,7 +1,9 @@
 module Algorithms.Arithmetic.Sums
 
+open Algorithms.Arithmetic.BasicArithmetic
+
 let sumTo n =
-    ( n ( n + 1 ) ) / 2
+    divide ( mult n ( add n 1 ) ) 2
 
 let sumOf x n =
-    ( ( x**(n + 1) ) - 1 ) / ( x - 1 )
+    divide ( minus ( pown x (add n 1) ) 1 ) ( minus x 1 )
