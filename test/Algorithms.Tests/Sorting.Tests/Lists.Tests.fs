@@ -5,9 +5,11 @@ open Algorithms.Sorting.Lists
 
 [<Fact>]
 let ``can randList`` () =
-    let c = 5
-    let l = randList c 1 100
-    Assert.Equal(c, l.Length)
+    let count = 5
+    let min = 1
+    let max = 100
+    let l = randList count min max
+    Assert.Equal(count, l.Length)
 
 [<Fact>]
 let ``can make orderedList`` () =

@@ -11,6 +11,7 @@
     <Compile Include="Arithmetic/Sums.fs"/>
     <Compile Include="Arithmetic/Powers.fs"/>
     <Compile Include="Searching/BinarySearch.fs"/>
+    <Compile Include="Searching/Arrays.fs"/>
     <Compile Include="Sorting/Lists.fs"/>
     <Compile Include="Sorting/InsertionSort.fs"/>
   </ItemGroup>

@@ -2,14 +2,14 @@ module Algorithms.Arithmetic.Powers
 
 open Algorithms.Arithmetic.BasicArithmetic
 
-let rec raiseToPower b n =
-    match n with
+let rec raiseToPower baseNum exponent =
+    match exponent with
     | 0 -> 1
-    | n -> mult (raiseToPower b (minus n 1)) b
+    | n -> mult (raiseToPower baseNum (minus n 1)) baseNum
 
 
-let rec raiseToPowerRec b n = 
-    match n with
+let rec raiseToPowerRec baseNum exponent = 
+    match exponent with
     | 0 -> 1
-    | n when n % 2 = 0 -> raiseToPowerRec (pown b 2) (divide n 2)
-    | _ -> mult (raiseToPowerRec (pown b 2) (divide n 2)) b
+    | exponent when exponent % 2 = 0 -> raiseToPowerRec (pown baseNum 2) (divide exponent 2)
+    | _ -> mult (raiseToPowerRec (pown baseNum 2) (divide exponent 2)) baseNum
