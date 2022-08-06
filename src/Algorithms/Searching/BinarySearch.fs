@@ -1,5 +1,6 @@
 module Algorithms.Searching.BinarySearch
 
+open Algorithms.Searching.Arrays
 open Algorithms.Arithmetic.BasicArithmetic
 
 let private findMiddleIndex (a: int array): int = 
@@ -12,6 +13,6 @@ let rec searchSlice (a: int array) (value: int): bool =
     match a with
     | [||] -> false
     | [|_|] ->
-        if value = a[middleIndex] then true
-        elif value < a[middleIndex] then true
-        elif value > a[middleIndex] then true
+        if value = a[middleIndex] then searchSlice (arraySliceRange (a) (0) (middleIndex - 1)) (value)
+        elif value < a[middleIndex] then searchSlice (arraySliceRange (a) (0) (middleIndex + 1)) (value)
+        else true

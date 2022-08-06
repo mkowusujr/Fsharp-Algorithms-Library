@@ -1,23 +1,19 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-
     <IsPackable>false</IsPackable>
     <GenerateProgramFile>false</GenerateProgramFile>
   </PropertyGroup>
-
   <ItemGroup>
-    <Compile Include="Arithmetic.Tests/BasicArithmetic.Tests.fs"/>
-    <Compile Include="Arithmetic.Tests/Factorial.Tests.fs"/>
-    <Compile Include="Arithmetic.Tests/Sums.Tests.fs"/>
-    <Compile Include="Arithmetic.Tests/Powers.Tests.fs"/>
-    <Compile Include="Searching.Tests/BinarySearch.Tests.fs"/>
-    <Compile Include="Searching.Tests/Arrays.Tests.fs"/>
-    <Compile Include="Sorting.Tests/Lists.Tests.fs"/>
-    <Compile Include="Sorting.Tests/InsertionSort.Tests.fs"/>
+    <Compile Include="Arithmetic.Tests/BasicArithmetic.Tests.fs" />
+    <Compile Include="Arithmetic.Tests/Factorial.Tests.fs" />
+    <Compile Include="Arithmetic.Tests/Sums.Tests.fs" />
+    <Compile Include="Arithmetic.Tests/Powers.Tests.fs" />
+    <Compile Include="Searching.Tests/Arrays.Tests.fs" />
+    <Compile Include="Searching.Tests/BinarySearch.Tests.fs" />
+    <Compile Include="Sorting.Tests/Lists.Tests.fs" />
+    <Compile Include="Sorting.Tests/InsertionSort.Tests.fs" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
     <PackageReference Include="xunit" Version="2.4.1" />
@@ -30,9 +26,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\..\src\Algorithms\Algorithms.fsproj" />
   </ItemGroup>
-  
 </Project>
