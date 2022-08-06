@@ -15,3 +15,17 @@ let rec searchSlice (a: int array) (value: int): bool =
         if value < a[middleIndex] then searchSlice (arraySliceRange (a) (0) (middleIndex - 1)) (value)
         elif value > a[middleIndex] then searchSlice (arraySliceRange (a) (0) (middleIndex + 1)) (value)
         else true
+
+let private findMiddleForSearchHelp (leftIndex: int) (rightIndex: int): int =
+    let middleIndex:double = divide (minus (rightIndex) (leftIndex)) (2)
+    leftIndex + int (floor (middleIndex))
+
+let rec private searchHelp (a: int array) (value: int) (leftIndex: int) (rightIndex: int): bool =
+    let middleIndex = findMiddleForSearchHelp leftIndex rightIndex
+    if leftIndex > rightIndex then false
+    elif value = a[middleIndex] then true
+    elif value < a[middleIndex] then searchHelp (a) (value) leftIndex (middleIndex - 1)
+    else searchHelp (a) (value) (middleIndex + 1) (rightIndex)
+
+let search (a:int array) (value:int): bool =
+    searchHelp (a) (value) (0) (a.Length - 1)
