@@ -10,9 +10,8 @@ let private findMiddleIndex (a: int array): int =
 
 let rec searchSlice (a: int array) (value: int): bool =
     let middleIndex: int = findMiddleIndex a
-    match a with
-    | [||] -> false
-    | [|_|] ->
-        if value = a[middleIndex] then searchSlice (arraySliceRange (a) (0) (middleIndex - 1)) (value)
-        elif value < a[middleIndex] then searchSlice (arraySliceRange (a) (0) (middleIndex + 1)) (value)
+    if a.Length = 0 then false
+    else
+        if value < a[middleIndex] then searchSlice (arraySliceRange (a) (0) (middleIndex - 1)) (value)
+        elif value > a[middleIndex] then searchSlice (arraySliceRange (a) (0) (middleIndex + 1)) (value)
         else true
