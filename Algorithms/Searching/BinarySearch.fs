@@ -5,7 +5,7 @@ open Algorithms.Arithmetic.BasicArithmetic
 
 // Method 1
 let private findMiddleIndex (a: int array) : int =
-    let middleIndex: double = divide (minus a.Length 1) (2)
+    let middleIndex: double = divide (subtract a.Length 1) (2)
     let middleIndexFloor = floor (middleIndex)
     int middleIndexFloor
 
@@ -23,7 +23,7 @@ let rec searchSlice (a: int array) (value: int) : bool =
 
 // Method 2
 let private findMiddleForSearchHelp (leftIndex: int) (rightIndex: int) : int =
-    let middleIndex: double = divide (minus (rightIndex) (leftIndex)) (2)
+    let middleIndex: double = divide (subtract (rightIndex) (leftIndex)) (2)
     leftIndex + int (floor (middleIndex))
 
 let rec private searchHelp (a: int array) (value: int) (leftIndex: int) (rightIndex: int) : bool =

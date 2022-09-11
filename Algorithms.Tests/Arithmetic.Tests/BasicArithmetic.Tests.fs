@@ -10,16 +10,16 @@ let `` add x y return the sum`` () =
     Assert.Equal(7, add 0 7)
 
 [<Fact>]
-let `` minus x y return the difference`` () =
-    Assert.Equal(3, minus 10 7)
-    Assert.Equal(-9, minus -4 5)
-    Assert.Equal(-3, minus 7 10)
+let `` subtract x y return the difference`` () =
+    Assert.Equal(3, subtract 10 7)
+    Assert.Equal(-9, subtract -4 5)
+    Assert.Equal(-3, subtract 7 10)
 
 [<Fact>]
-let `` mult x y return the product`` () =
-    Assert.Equal(15, mult 3 5)
-    Assert.Equal(25, mult 5 5)
-    Assert.Equal(9, mult -3 -3)
+let `` multiply x y return the product`` () =
+    Assert.Equal(15, multiply 3 5)
+    Assert.Equal(25, multiply 5 5)
+    Assert.Equal(9, multiply -3 -3)
 
 [<Fact>]
 let `` divide x y return the quoient`` () =
