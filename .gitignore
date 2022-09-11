@@ -5,3 +5,4 @@ Algorithms.Tests/obj
 .vscode
 .fake
 .vs
+/Algorithms.Tests/TestResults/Ionide.trx
