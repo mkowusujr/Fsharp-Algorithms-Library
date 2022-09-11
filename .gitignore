@@ -3,3 +3,4 @@ Algorithms/obj
 Algorithms.Tests/bin
 Algorithms.Tests/obj
 .vscode
+.fake
