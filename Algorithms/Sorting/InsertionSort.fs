@@ -18,7 +18,7 @@ let rec private insert (x: int) (xs: int list) =
 
 /// <summary>Sorts a list with insertion sort</summary>
 /// <param name="list">The list that needs to be sorted</param>
-let rec isort list : int list =
+let rec iSort list : int list =
     match list with
     | [] -> []
-    | x :: xs -> insert (x) (isort xs)
+    | x :: xs -> insert (x) (iSort xs)
