@@ -5,6 +5,13 @@ open Algorithms.Sorting.MergeSort
 open Algorithms.Sorting.Lists
 
 [<Fact>]
+let ``merge sort on empty list`` () =
+    let originalList: int list = [ ]
+    let actualList: int list = mSort originalList
+    let expectedList: int list = [ ]
+    Assert.Equal<int list>(expectedList, actualList)
+
+[<Fact>]
 let ``merge sort on reversed list`` () =
     let originalList: int list = [ 5; 4; 3; 2; 1 ]
     let actualList: int list = mSort originalList

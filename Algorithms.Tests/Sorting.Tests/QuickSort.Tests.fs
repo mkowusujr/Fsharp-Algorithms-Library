@@ -5,6 +5,13 @@ open Algorithms.Sorting.QuickSort
 open Algorithms.Sorting.Lists
 
 [<Fact>]
+let ``quick sort on empty list`` () =
+    let originalList: int list = [ ]
+    let actualList: int list = qSort originalList
+    let expectedList: int list = [ ]
+    Assert.Equal<int list>(expectedList, actualList)
+
+[<Fact>]
 let ``quick sort on reversed list`` () =
     let originalList: int list = [ 5; 4; 3; 2; 1 ]
     let actualList: int list = qSort originalList
