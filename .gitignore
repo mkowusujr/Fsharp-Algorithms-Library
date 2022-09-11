@@ -1,6 +1,7 @@
-src/Algorithms/bin    
-src/Algorithms/obj
-test/Algorithms.Tests/bin
-test/Algorithms.Tests/obj
-test/Algorithms.Tests/TestResults
+Algorithms/bin    
+Algorithms/obj
+Algorithms.Tests/bin
+Algorithms.Tests/obj
+.vscode
 .fake
+.vs

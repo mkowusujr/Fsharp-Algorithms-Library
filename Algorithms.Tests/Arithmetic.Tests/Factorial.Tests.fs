@@ -4,7 +4,7 @@ open Xunit
 open Algorithms.Arithmetic.Factorial
 
 [<Fact>]
-let ``factorial find the factorial given an input`` () = 
+let ``factorial find the factorial given an input`` () =
     let n1 = 0
     let e1 = 1
     Assert.Equal(e1, factorial n1)
@@ -28,7 +28,7 @@ let ``factorial find the factorial given an input`` () =
     Assert.Equal(e7, factorial n7)
 
 [<Fact>]
-let ``factorialAcc find the factorial given an input`` () = 
+let ``factorialAcc find the factorial given an input`` () =
     let acc = 1
     let n1 = 0
     let e1 = 1

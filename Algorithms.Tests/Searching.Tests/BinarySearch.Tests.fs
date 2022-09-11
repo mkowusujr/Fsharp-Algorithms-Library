@@ -11,19 +11,19 @@ let ```searchSlice [| |] 4`` () =
 
 [<Fact>]
 let ```searchSlice [|1|] 1`` () =
-    let original: int array = [|1|]
+    let original: int array = [| 1 |]
     let value = 1
     Assert.True(searchSlice original value)
 
 [<Fact>]
 let ```searchSlice [|1;2|] 2`` () =
-    let original: int array = [|1;2|]
+    let original: int array = [| 1; 2 |]
     let value = 2
-    Assert.True(searchSlice original value)   
+    Assert.True(searchSlice original value)
 
 [<Fact>]
 let ```searchSlice [|1;2;3;4;5|] 4`` () =
-    let original: int array = [|1;2;3;4;5|]
+    let original: int array = [| 1; 2; 3; 4; 5 |]
     let value = 4
     Assert.True(searchSlice original value)
 
@@ -35,24 +35,24 @@ let ```search [| |] 4`` () =
 
 [<Fact>]
 let ```search [|1|] 1`` () =
-    let original: int array = [|1|]
+    let original: int array = [| 1 |]
     let value = 1
     Assert.True(search original value)
 
 [<Fact>]
 let ```search [|1;2|] 2`` () =
-    let original: int array = [|1;2|]
+    let original: int array = [| 1; 2 |]
     let value = 2
-    Assert.True(search original value)   
+    Assert.True(search original value)
 
 [<Fact>]
 let ```search [|1;2;3;4;5|] 4`` () =
-    let original: int array = [|1;2;3;4;5|]
+    let original: int array = [| 1; 2; 3; 4; 5 |]
     let value = 4
     Assert.True(search original value)
 
 [<Fact>]
 let ```search [|10;20;30;40;50;60;70;80;90|] 30`` () =
-    let original: int array = [|10;20;30;40;50;60;70;80;90|]
+    let original: int array = [| 10; 20; 30; 40; 50; 60; 70; 80; 90 |]
     let value = 30
     Assert.True(search original value)
