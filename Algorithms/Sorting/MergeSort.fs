@@ -40,7 +40,7 @@ let rec private mSortHelper (list: int list) (accList1: int list) (accList2: int
     | [ _ ] -> list
     | _ ->
         let (b1, b2) = d list accList1 accList2
-        merge (mSortHelper b1 accList1 accList2) ( mSortHelper b2 accList1 accList2)
+        merge (mSortHelper b1 accList1 accList2) (mSortHelper b2 accList1 accList2)
 
 /// <summary>Performs merge sort on a given list</summary>
 /// <param name="list">The given list</param>
