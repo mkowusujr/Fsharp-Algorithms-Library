@@ -3,8 +3,9 @@ module Algorithms.Searching.BinarySearch
 open Algorithms.Searching.Arrays
 open Algorithms.Arithmetic.BasicArithmetic
 
+// Method 1
 let private findMiddleIndex (a: int array): int = 
-    let middleIndex:double = divide (minus (a.Length) (1)) (2)
+    let middleIndex: double = divide (minus a.Length 1) (2)
     let middleIndexFloor = floor (middleIndex)
     int middleIndexFloor
 
@@ -13,9 +14,10 @@ let rec searchSlice (a: int array) (value: int): bool =
     if a.Length = 0 then false
     else
         if value < a[middleIndex] then searchSlice (arraySliceRange (a) (0) (middleIndex - 1)) (value)
-        elif value > a[middleIndex] then searchSlice (arraySliceRange (a) (0) (middleIndex + 1)) (value)
+        elif value > a[middleIndex] then searchSlice (arraySliceRange (a) (middleIndex + 1) (a.Length - 1)) (value)
         else true
 
+// Method 2
 let private findMiddleForSearchHelp (leftIndex: int) (rightIndex: int): int =
     let middleIndex:double = divide (minus (rightIndex) (leftIndex)) (2)
     leftIndex + int (floor (middleIndex))
