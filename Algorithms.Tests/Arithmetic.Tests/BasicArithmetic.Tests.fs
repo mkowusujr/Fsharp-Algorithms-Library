@@ -23,5 +23,5 @@ let `` mult x y return the product`` () =
 
 [<Fact>]
 let `` divide x y return the quoient`` () =
-    Assert.Equal(3/2, divide 15 10)
+    Assert.Equal(3 / 2, divide 15 10)
     Assert.Equal(1, divide 10 10)

@@ -8,7 +8,7 @@ let rec raiseToPower baseNum exponent =
     | n -> mult (raiseToPower baseNum (minus n 1)) baseNum
 
 
-let rec raiseToPowerRec baseNum exponent = 
+let rec raiseToPowerRec baseNum exponent =
     match exponent with
     | 0 -> 1
     | exponent when exponent % 2 = 0 -> raiseToPowerRec (pown baseNum 2) (divide exponent 2)
