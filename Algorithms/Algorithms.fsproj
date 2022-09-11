@@ -13,5 +13,6 @@
     <Compile Include="Sorting/Lists.fs" />
     <Compile Include="Sorting/InsertionSort.fs" />
     <Compile Include="Sorting/MergeSort.fs" />
+    <Compile Include="Sorting/QuickSort.fs" />
   </ItemGroup>
 </Project>
